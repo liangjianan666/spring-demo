@@ -3,7 +3,7 @@ package com.lja.infrastructure.enums;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 
-@RequiredArgsConstructor
+//@RequiredArgsConstructor
 @Getter
 public enum ResultCode {
     SUCCESS("200", "操作成功"),
@@ -22,4 +22,16 @@ public enum ResultCode {
     private final String code;
     private final String msg;
 
+    ResultCode(String code, String msg) {
+        this.code = code;
+        this.msg = msg;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
 }
