@@ -6,7 +6,6 @@ import com.lja.infrastructure.dto.StudentDTO;
 import com.lja.infrastructure.vo.StudentVO;
 import com.lja.mapper.StudentMapper;
 import com.lja.service.StudentService;
-import com.lja.test.StaticTest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

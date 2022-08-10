@@ -76,6 +76,8 @@
             <artifactId>javassist</artifactId>
             <version>${javassist.version}</version>
         </dependency>
+
+        <!--常用工具依赖-->
         <!--分页信息-->
 <!--        <dependency>-->
 <!--            <groupId>com.github.pagehelper</groupId>-->
@@ -112,11 +114,13 @@
             <version>${mapstruct.version}</version>
         </dependency>
 
-        <!--aop依赖 父类已经有对应的依赖,引入即可-->
+        <!--aop依赖 父类已经有对应的依赖,引入即可，不需要指定版本-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
         </dependency>
+
+        <!--todo redis集成搭建-->
     </dependencies>
 
 
