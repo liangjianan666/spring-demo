@@ -28,4 +28,8 @@
        FROM student
     </select>
 
+    <select id="getCodeList" resultType="java.lang.String">
+        SELECT DISTINCT code from student
+    </select>
+
 </mapper>

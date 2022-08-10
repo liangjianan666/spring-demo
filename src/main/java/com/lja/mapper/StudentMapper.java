@@ -4,6 +4,7 @@ import com.lja.infrastructure.domain.Student;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
+import java.util.Set;
 
 /**
  * @author liangjianan
@@ -20,4 +21,6 @@ public interface StudentMapper {
     void update(Student student);
 
     void delete(String id);
+
+    Set<String> getCodeList();
 }
