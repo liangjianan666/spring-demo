@@ -5,6 +5,7 @@ import com.lja.infrastructure.domain.Student;
 import com.lja.infrastructure.dto.StudentDTO;
 import com.lja.infrastructure.vo.StudentVO;
 import com.lja.mapper.StudentMapper;
+import com.lja.service.B;
 import com.lja.service.StudentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
@@ -27,6 +28,9 @@ public class StudentServiceImpl implements StudentService {
 
     @Autowired
     private RedisTemplate<String, String> redisTemplate;
+
+    @Autowired
+    private B b;
 
     private final static String STUDENT_CODE = "student_code";
 
